@@ -215,7 +215,7 @@ $(document).ready(function (e) {
 // input function
 var globefRCont = [], globefGCont = [], globefBCont = [];
 
-$("body").on('keydown', ".textColor", function () {
+$("body").on("keyup change keydown", ".textColor", function () {
     var j = $(this).parents(".colorInputContainer")[0].id.match(/\d/g)[0];
     tColor = document.getElementById('t' + [j]).getElementsByClassName("colorHexInput")[0].value;
     if (document.getElementById('t' + [j]).getElementsByClassName("colorAlphaInput")[0].value >= 100) {
@@ -446,12 +446,12 @@ $("body").on('input', 'input[type="range"]', function () {
 });
 
 //Change Opacity
-$("body").on('keydown', '.colorAlphaInput', function () {
+$("body").on("keyup change", '.colorAlphaInput', function () {
     $(this).parents('.colorInputContainer').children('.colorHexInput').keydown();
 });
 
 // Back Color Change
-$("body").on('keydown', '.backColor', function () {
+$("body").on("keyup change", '.backColor', function () {
     var i = $(this).parents('.colorInputContainer')[0].id.match(/\d/g)[0];
     setBackPreview('#b' + [i], $(this)[0].value);
     var cellCount = $('.paletteTableWrapper').children('.paletteTableRow').length + 1;
