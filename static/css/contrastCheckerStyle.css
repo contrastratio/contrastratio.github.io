@@ -19,6 +19,7 @@ body {
     border: none;
     padding: 0px;
     overflow-x: hidden;
+
 }
 
 .bgWhite98 {
@@ -78,6 +79,8 @@ body {
     -ms-flex-pack: start;
     justify-content: flex-start;
     position: relative;
+    min-width: 960px;
+    min-height: 520px;
 }
 
 h1 {
@@ -137,6 +140,9 @@ h3 {
     padding: 0px 2rem;
     cursor: pointer;
     z-index: 5000;
+}
+.header-wrapper>*+* {
+    margin-left: 1rem !important;
 }
 
 .burgerBtn {
@@ -199,8 +205,31 @@ h3 {
     width: 40px;
     height: 40px;
     background-image: url('../img/sonnatLogo.svg');
-}
+    background-repeat: no-repeat;
+    background-position: center;
 
+}
+.headerTitle{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+    margin: 0px; 
+}
+.headerTitle.sonnatTitle{
+     letter-spacing: 2px
+   
+}
+.headerTitle.toolTitle{
+    font-weight: 300;
+     transform: translateY(-1px);
+     font-size: .875rem;   
+}
+.headerDevider{
+    width: 1px;
+    height: 36%;
+    background-color: rgba(0, 0, 0, .24)
+}
 .main {
     width: 100%;
     height: auto;
