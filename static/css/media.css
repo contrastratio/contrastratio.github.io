@@ -18,7 +18,7 @@
         transform: translate(-110%, -124%) scale(.6666667);
     }
 }
-
+/* 
 @media screen and (max-width: 960px) and (-webkit-min-device-pixel-ratio: 1) {
     .leftPanel {
         display: none
@@ -147,4 +147,4 @@
     .resultTypeContainer span {
         display: none !important;
     }
-}
+} */
