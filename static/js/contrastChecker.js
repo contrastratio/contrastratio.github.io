@@ -137,7 +137,7 @@ function setCell(cellId, fR, fG, fB, bR, bG, bB, cR, bHex, fHex, l) {
     }
     $(cellId).children(".resultWrapper").children(".paletteInfoContainer").children(".brightnessSliderContainer").children('input')[0].value = l;
     $(cellId).children(".resultWrapper").children(".paletteInfoContainer").children(".brightnessSliderContainer").children('input')[0].step = "10";
-    $(cellId).children(".resultWrapper").children(".paletteInfoContainer").children('.brightnessSliderContainer').children('.rangeTooltipWrapper').children('.rangeTooltipContainer')[0].innerHTML = Math.round(l);
+    $(cellId).children(".resultWrapper").children(".paletteInfoContainer").children('.brightnessSliderContainer').children('.rangeTooltipWrapper').children('.rangeTooltipContainer')[0].innerHTML ="L : " + Math.round(l);
     var slider = $(cellId)
         .children(".resultWrapper")
         .children(".paletteInfoContainer")
@@ -417,7 +417,7 @@ $("body").on('input', 'input[type="range"]', function () {
         $(this).parents('.paletteInfoContainer').children('.brightnessSliderContainer').children('.rangeTooltipWrapper').children('.rangeTooltipContainer')[0].innerHTML = "0";
 
     } else if (slider.value > 1 && slider.value <= 99) {
-        $(this).parents('.paletteInfoContainer').children('.brightnessSliderContainer').children('.rangeTooltipWrapper').children('.rangeTooltipContainer')[0].innerHTML = Math.round(slider.value);
+        $(this).parents('.paletteInfoContainer').children('.brightnessSliderContainer').children('.rangeTooltipWrapper').children('.rangeTooltipContainer')[0].innerHTML = "L: " + Math.round(slider.value);
 
     } else if (slider.value > 99) {
         $(this).parents('.paletteInfoContainer').children('.brightnessSliderContainer').children('.rangeTooltipWrapper').children('.rangeTooltipContainer')[0].innerHTML = "100";
