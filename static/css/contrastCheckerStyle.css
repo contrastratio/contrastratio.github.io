@@ -19,7 +19,6 @@ body {
     border: none;
     padding: 0px;
     overflow-x: hidden;
-
 }
 
 .bgWhite98 {
@@ -141,6 +140,7 @@ h3 {
     cursor: pointer;
     z-index: 5000;
 }
+
 .header-wrapper>*+* {
     margin-left: 1rem !important;
 }
@@ -207,29 +207,32 @@ h3 {
     background-image: url('../img/sonnatLogo.svg');
     background-repeat: no-repeat;
     background-position: center;
-
 }
-.headerTitle{
+
+.headerTitle {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     line-height: 1.75rem;
     font-weight: 400;
-    margin: 0px; 
+    margin: 0px;
 }
-.headerTitle.sonnatTitle{
-     letter-spacing: 2px
-   
+
+.headerTitle.sonnatTitle {
+    letter-spacing: 2px
 }
-.headerTitle.toolTitle{
+
+.headerTitle.toolTitle {
     font-weight: 300;
-     transform: translateY(-1px);
-     font-size: .875rem;   
+    transform: translateY(-1px);
+    font-size: .875rem;
 }
-.headerDevider{
+
+.headerDevider {
     width: 1px;
     height: 36%;
     background-color: rgba(0, 0, 0, .24)
 }
+
 .main {
     width: 100%;
     height: auto;
@@ -530,6 +533,7 @@ h3 {
 .rightPanel {
     width: calc(100% - 17.625rem);
     height: auto;
+    min-height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -554,27 +558,29 @@ h3 {
     width: 100%;
     height: auto;
     max-width: 47.5rem;
-    min-height: 200px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box
 }
-.rightPanelTitleContainer{
+
+.rightPanelTitleContainer {
     width: auto;
     height: auto;
     display: flex;
     flex-flow: row;
     align-items: center;
     justify-content: flex-start;
-
 }
-.rightPanelTitleContainer>*+*{
+
+.rightPanelTitleContainer>*+* {
     margin-left: 1rem
 }
-.toolIcon{
+
+.toolIcon {
     width: 40px;
     height: 40px;
     background-image: url('../img/contrastIcon.svg');
 }
+
 .paletteTableWrapper {
     width: 100%;
     height: auto;
@@ -1484,4 +1490,94 @@ input[type=range]:focus::-ms-fill-upper {
     position: relative;
     background-color: rgba(255, 255, 255, .12);
     background-image: url('../img/export.svg')
+}
+
+.footerWrapper {
+    width: 100%;
+    max-width: 47.5rem;
+    border-top: 1px solid rgba(0, 0, 0, .12);
+    height: 160px;
+    margin-top: auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+}
+
+.testimonialWrapper {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.footerLogo {
+    width: 48px;
+    height: 48px;
+    background-image: url('../img/footerLogo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footerLogoType {
+    font-family: 'Roboto', sans-serif;
+    font-size: .875rem;
+    line-height: 3rem;
+    font-weight: 400;
+    margin-left: .5rem;
+    letter-spacing: 1.25px;
+    color: rgba(0, 0, 0, .64)
+}
+
+.testimonialDevider {
+    width: 1px;
+    height: 3rem;
+    margin-left: 1rem
+}
+
+.testimonialContainer {
+    width: auto;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial {
+    font-family: 'Roboto', sans-serif;
+    font-size: .75rem;
+    line-height: 1.2rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .64);
+    margin-left: 1rem;
+}
+
+.copyrightWrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.copyright {
+    font-family: 'Roboto', sans-serif;
+    font-size: .75rem;
+    line-height: 1.2rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .54);
+}
+
+.bazaarLogo {
+    width: 2rem;
+    height: 2rem;
+    background-image: url('../img/bazaar.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
