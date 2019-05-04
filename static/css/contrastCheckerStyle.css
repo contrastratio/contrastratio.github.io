@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
-     -webkit-appearance: none;
+    -webkit-appearance: none;
     margin: 0;
- }
+}
 
 input[type=number] {
     -moz-appearance: textfield;
@@ -17,6 +17,12 @@ body {
     border: none;
     padding: 0px;
     overflow-x: hidden;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit;
+    cursor: pointer;
 }
 
 .bgWhite98 {
@@ -221,7 +227,9 @@ h3 {
 
 .headerTitle.toolTitle {
     font-weight: 300;
-    transform: translateY(-1px);
+    -webkit-transform: translateY(-1px);
+        -ms-transform: translateY(-1px);
+            transform: translateY(-1px);
     font-size: .875rem;
 }
 
@@ -563,10 +571,19 @@ h3 {
 .rightPanelTitleContainer {
     width: auto;
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 
 .rightPanelTitleContainer>*+* {
@@ -1497,18 +1514,33 @@ input[type=range]:focus::-ms-fill-upper {
     height: auto;
     margin-top: auto;
     padding: 1rem;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
 }
 
 .testimonialWrapper {
     width: auto;
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row;
-    align-items: flex-start;
-    justify-content: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 
 .footerLogo {
@@ -1539,9 +1571,15 @@ input[type=range]:focus::-ms-fill-upper {
 .testimonialContainer {
     width: auto;
     height: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .testimonial {
@@ -1556,10 +1594,19 @@ input[type=range]:focus::-ms-fill-upper {
 .copyrightWrapper {
     width: 100%;
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 4rem;
 }
 
@@ -1578,4 +1625,11 @@ input[type=range]:focus::-ms-fill-upper {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    -webkit-transition: 250ms ease;
+    -o-transition: 250ms ease;
+    transition: 250ms ease;
+}
+
+.bazaarLogo:hover {
+    background-image: url('../img/divarHover.svg');
 }
